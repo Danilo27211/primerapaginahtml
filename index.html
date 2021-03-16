@@ -78,24 +78,26 @@
 <hr>
 <br>
 <form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+ 	<label for="nombre"> Ingrese Su Nombre:</label>
+	<input type="text" placeholder="Digite Su Nombre" maxlength="50" nombre="usuario" id="nombre">
+	<br />
+	<br />
+	<label for="asunto"> Ingrese El Asunto:</label>
+	<input type="text" placeholder="Digite El Asunto" maxlength="100" nombre="asunto" id="asunto">
+	<br />
+	<br />
+	<label for="email"> Ingrese Su Email:</label>
+	<input type="email" placeholder="Digite Su Email" maxlength="50" name="email" id="email"></input>
+	<br />
+	<br />
+		
+    <label for="mensaje">Ingrese Su Mensaje:</label>
+    <textarea id="mensaje" name="mensaje"></textarea>
+    <br />
+    <hr>
+	<input type="submit" name="submit">
+	<button>Cancelar</button>
+
 </form>
  <hr>
 
