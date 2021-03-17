@@ -1,46 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<img src="imagen.jfif" alt="imagen" style="width:300px;height:400px;">
+
 <head>
 	<title> Primera Pagina</title>
+
+	<link rel="stylesheet" href="estilos.css"/>
 </head>
-
+<br>
+<hr>
 <body>
-	<br>
-	<hr>
-	<a href="index2.html">contacto</a>
-	<h1 style="color:red;"> Dimar Danilo Lozano Ovallos</h1>
-	<h3>fecha de nacimiento: 27 de mayo del 2000</h3>
-	<p>Nací en la ciudad de cucúta,me considero una persona introvertida, me gusta el deporte como el futboll, basketball, entre alguno otros deportes, por el momento he viajado dos veces la costa y algunos pueblitos de norte de santander </P>
-	
-	<P>En lo que llevo de la carrera me ha gustado, aunuque al principio tube problemas de organizacion con el trabajo y estudio en el que no me podia desempeñar bien academicamente, ahora gracias a Dios puedo estudiar y trabajar sin problema, en el transcurso de la carrera he conocido excelentes personas, amigos y profesores, de los que he podido aprender mucho, lo que mas me gusta diria que el tema de las bases de datos y la progrmacion web de la que espero aprender mucho este semestre, en 5 años me veo graduado y con un buen empleo.</P> 
 
-	<h3>Hobbies</h3> 
-    <ul>
-    	<li>Futbol</li>
-    	<li>Deportes</li>
-    	<li>Video juegos</li>
-    </ul>
-	<h3> Peliculas Favoritas</h3>
-    <ul>
-    	<li>Spiderman</li>
-    	<li>Los Vengadores</li>
-    	<li>The Maze Runner</li>
-    </ul>
-    <h3> Series Favoritas</h3>
-    <ul>
-    	<li>Game of thrones</li>
-    	<li>One Piece</li>
-    	<li>Smallville</li>
-    </ul>
+	<div id="container">
+     <img src="fondo.jpg" alt="imagen" style="width:933px;height:400px;">
+		<header>
+			<h1 style="color:red;"> Dimar Danilo Lozano Ovallos</h1>
+		</header>
 
-    <h3> Una De Mis Canción Favoritas </h3>
-    <p> Eres Mi Bendición - Funky </p>
-<audio src="Eres Mi Bendicion - funky.mp3" controls autoplay></audio>
-</body>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">biografia</a>
+				</li>
+				<li>
+					<a href="index.html">Hobbies</a>
+				</li>
+				<li>
+					<a href="index.html">Peliculas Favoritas</a>
+				</li>
+				<li>
+					<a href="index.html">Series Favoritas</a>
+				</li>
+				<li>
+					<a href="index.html">Canción Favorita</a>
+				</li>
 
-</br>
-<table border="4px" bordercolor="666633" high="70%" width="70%" >
+			</ul>
+<div class="clearfix"></div>
+		</nav>
+
+		<section id="content">
+			
+			<article class="article">
+				<h2>Biografia</h2>
+				<h3>fecha de nacimiento: 27 de mayo del 2000</h3>
+				<p>Nací en la ciudad de cucúta,me considero una persona introvertida, me gusta el deporte como el futboll, basketball, entre alguno otros deportes, por el momento he viajado dos veces la costa y algunos pueblitos de norte de santander </p>
+
+				<P>En lo que llevo de la carrera me ha gustado, aunuque al principio tube porblemas de organizacion con el trabajo y estudio en el que no me podia desempeñar bien academicamente, ahora gracias a Dios puedo estudiar y trabajar sin problema, en el transcurso de la carrera he conocido excelentes personas, amigos y profesores, de los que he podido aprender mucho, lo que mas me gusta diria que el tema de las bases de datos y la progrmacion web de la que espero aprender mucho este semestre, en 5 años me veo graduado y con un buen empleo.</P> 
+			</article>
+
+			<article class="article">
+				<h3>Hobbies</h3> 
+            <ul>
+    	        <li>Futbol</li>
+    	        <li>Deporte</li>
+    	        <li>Video juegos</li>
+             </ul>		
+       	</article>
+
+		<article class="article">
+				<h3> Peliculas Favoritas</h3>
+            <ul>
+    	        <li>Spiderman</li>
+             	<li>Los Vengadores</li>
+    	        <li>The Maze Runner</li>
+            </ul>
+        </article>
+
+        <article class="article">
+           <h3> Series Favoritas</h3>
+            <ul>
+    	        <li>Game of thrones</li>
+    	        <li>One Piece</li>
+    	        <li>Smallville</li>
+            </ul>
+        </article>
+       
+        <article class="article">
+           <h3> Una De Mis Canción Favoritas </h3>
+              <p> Eres Mi Bendición - Funky </p>
+             <audio src="Eres Mi Bendicion - funky.mp3" controls autoplay></audio>
+	    </article>
+
+	    <article class="article">
+	    	<table border="4px" bordercolor="666633" high="70%" width="70%" >
 <tr>
 	<td>Materia</td>
 	<td>Nota</td>
@@ -77,15 +119,36 @@
 	</tr>
  
  </table>
+	    </article>
 
-<hr>
-<br>
+		</section>
 
- <hr>
-
+		<aside>
+			<h2>Contacto</h2>
+			<form name="contact" method="POST" data-netlify="true">
+ 	<p>
+    <label>Digite Su Nombre: <input type="text" placeholder="Digite Su Nombre" maxlength="50" name="nombre" id="nombre" /></label>   
+  </p>
+  <p>
+    <label>Digite El Asunto: <input type="text" placeholder="Digite El Asunto" maxlength="50" name="asunto" id="asunto" /></label>
+  </p>
+  <p>
+        <label>Digite Su Email: <input type="email" placeholder="Digite Su Email" maxlength="50" name="email" id="email" /></label>
+  </p>
+  <p>
+    <label>Mensaje: <textarea name="mensaje"></textarea></label>
+  </p>
+  <br>
+    <input type="submit" name="submit">
+	<button>Cancelar</button>
+  
+		</aside>
+      
 	<footer>
-		<p style="background-color: powderblue; color:red;font-family: courier;font-size: 100%;text-align: center"> Dimar Danilo Lozano Ovallos - 2021</p>
+		 Dimar Danilo Lozano Ovallos - 2021
 	</footer>
-
-
+   
+	</div>
+	
+</body>
 </html>
