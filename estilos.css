@@ -71,6 +71,11 @@ body{
              padding-bottom: 10px;
              border-bottom: 1px solid MediumPurple;
 		}
+      
+              #audio{
+	border:1px solid black;
+	background:DarkCyan;
+}
 
 		.article:firts-child{
 			padding-top: 1px;
